@@ -27,6 +27,16 @@
 require("@babel/register"); ({ ignore: /node_modules\/(?!zeppelin-solidity)/ });
 require("@babel/polyfill");
 
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "25aa1c23b040405a9c44db1e60fa9d85";
+//
+// const fs = require('fs');
+const mnemonic = "seven kitten transfer domain apple news struggle author eye pet mule ozone".toString().trim()
+// let ropstenProvider = new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/` + infuraKey)
+let rinkebyProvider = new HDWalletProvider(mnemonic, `http://127.0.0.1:8545`)
+// let kovanProvider = new HDWalletProvider(mnemonic, `https://kovan.infura.io/v3/` + infuraKey)
+
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the

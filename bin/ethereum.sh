@@ -1,0 +1,1 @@
+npx ganache-cli -f https://mainnet.infura.io/v3/78cba03696d7430daeef8383d563e065 --network-id 1 -m "seven kitten transfer domain apple news struggle author eye pet mule ozone" -k istanbul
